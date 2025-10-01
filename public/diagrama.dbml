@@ -11,3 +11,8 @@ table configuraciones {
   logo varchar
 
 }
+
+ table gestiones{
+  id int [pk, increment]
+  nombre varchar
+ }

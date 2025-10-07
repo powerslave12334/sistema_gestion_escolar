@@ -313,6 +313,24 @@ return [
             'icon' => 'fas fa-fw fa-tasks',
             'classes' => 'bg-blue text-white',
         ],
+        [
+            'text' => 'periodos',
+            'url' => 'admin/periodos',
+            'icon' => 'fas fa-fw fa-calendar',
+            'classes' => 'bg-blue text-white',
+        ],
+        [
+            'text' => 'Niveles',
+            'url' => 'admin/niveles',
+            'icon' => 'fas fa-fw fa-layer-group',
+            'classes' => 'bg-blue text-white',
+        ],
+         [
+            'text' => 'Turnos',
+            'url' => 'admin/turnos',
+            'icon' => 'fas fa-fw fa-clock',
+            'classes' => 'bg-blue text-white',
+        ],
 
     ],
     /*
@@ -396,12 +414,17 @@ return [
             ],
         ],
         'Sweetalert2' => [
-            'active' => false,
+            'active' => true,
             'files' => [
                 [
                     'type' => 'js',
-                    'asset' => false,
-                    'location' => '//cdn.jsdelivr.net/npm/sweetalert2@8',
+                    'asset' => true,
+                    'location' => 'https://cdn.jsdelivr.net/npm/sweetalert2@11.23.0/dist/sweetalert2.all.min.js',
+                ],
+                [
+                    'type' => 'css',
+                    'asset' => true,
+                    'location' => 'https://cdn.jsdelivr.net/npm/sweetalert2@11.23.0/dist/sweetalert2.min.css',
                 ],
             ],
         ],

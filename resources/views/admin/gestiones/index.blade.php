@@ -22,7 +22,37 @@
                         <div class="row">
                             <a href="{{ url('/admin/gestiones/' . $gestion->id . '/edit') }}"
                                 class="btn btn-success btn-sm"><i class="fas fa-pencil-alt"></i> Editar</a>
-                            <a href="" class="btn btn-danger btn-sm"><i class="fas fa-trash"></i> Editar</a>
+
+                            <form action="{{ url('/admin/gestiones/' . $gestion->id) }}" method="post"
+                                id="miFormulario{{ $gestion->id }}">
+                                @csrf
+                                @method('DELETE')
+                                <button type="submit" class="btn btn-danger btn-sm" onclick="preguntar{{ $gestion->id }}(event)">
+                                    <i class="bi bi-trash"></i> Eliminar
+                                </button>
+                            </form>
+
+                            <script>
+                                function preguntar{{ $gestion->id }}(event) {
+                                    event.preventDefault();
+
+                                    Swal.fire({
+                                        title: '¿Desea eliminar este registro?',
+                                        text: '',
+                                        icon: 'question',
+                                        showDenyButton: true,
+                                        confirmButtonText: 'Eliminar',
+                                        confirmButtonColor: '#a5161d',
+                                        denyButtonColor: '#270a0a',
+                                        denyButtonText: 'Cancelar',
+                                    }).then((result) => {
+                                        if (result.isConfirmed) {
+                                            // JavaScript puro para enviar el formulario
+                                            document.getElementById('miFormulario{{ $gestion->id }}').submit();
+                                        }
+                                    });
+                                }
+                            </script>
                         </div>
                     </div>
                 </div>

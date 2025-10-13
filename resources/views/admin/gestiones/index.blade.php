@@ -15,7 +15,7 @@
         @foreach ($gestiones as $gestion)
             <div class="col-md-3 col-sm-6 col-12">
                 <div class="info-box zoomP">
-                    <img src="{{ url('/img/calendario.gif') }}" alt="" width="70px">
+                    <img src="{{ url('/img/colegio.gif') }}" alt="" width="90px">
                     <div class="info-box-content">
                         <span class="info-box-text"><b>Gestiones Educativa</b></span>
                         <span class="info-box-number">{{ $gestion->nombre }}</span>

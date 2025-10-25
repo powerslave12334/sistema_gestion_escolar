@@ -62,6 +62,8 @@ sistema_gestion_escolar/
 ├── tests/
 └── .env.example
 
+---
+
 ## ⚙️ Instalación
 
 🔹 Requisitos previos

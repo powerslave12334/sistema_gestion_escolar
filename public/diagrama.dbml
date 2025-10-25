@@ -49,3 +49,24 @@ table materias {
   id int [pk,increment]
   nombre varchar
 }
+
+table users {
+  id int [pk,increment]
+  name varchar
+  email varchar
+  password varchar
+}
+
+table personals{
+  id int [pk,increment]
+  usuario_id int [ref: > users.id]
+  tipo varchar
+  nombre varchar
+  apellidos varchar
+  ci varchar
+  fecha_nacimiento date
+  direccion varchar
+  telefono varchar
+  profesion varchar
+  foto varchar
+}

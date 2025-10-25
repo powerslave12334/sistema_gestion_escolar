@@ -1,61 +1,113 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 🎓 Sistema de Gestión Escolar
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+![Laravel](https://img.shields.io/badge/Laravel-FF2D20?logo=laravel&logoColor=white)
+![PHP](https://img.shields.io/badge/PHP-777BB4?logo=php&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-green)
+![Status](https://img.shields.io/badge/Status-En%20Desarrollo-blue)
 
-## About Laravel
+Un sistema integral de gestión escolar desarrollado con **Laravel** y **MySQL**, diseñado para administrar todos los aspectos académicos, administrativos y comerciales de una institución educativa.  
+Incluye módulos de usuarios, alumnos, calificaciones, inventario, tienda en línea, reportes y más.  
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+---
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## 🧭 Tabla de contenidos
+- [🚀 Características principales](#-características-principales)
+- [🧱 Estructura del proyecto](#-estructura-del-proyecto)
+- [⚙️ Instalación](#️-instalación)
+- [🧩 Módulos disponibles](#-módulos-disponibles)
+- [💡 Uso](#-uso)
+- [🤝 Contribuciones](#-contribuciones)
+- [📄 Licencia](#-licencia)
+- [👤 Autor](#-autor)
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+---
 
-## Learning Laravel
+## 🚀 Características principales
+✅ Autenticación y roles de usuario (administrador, profesor, alumno)  
+✅ Gestión completa de alumnos y personal docente  
+✅ Registro y control de calificaciones  
+✅ Administración de materias y grupos  
+✅ Inventario y almacén de recursos escolares  
+✅ Tienda en línea con carrito y control de ventas  
+✅ Panel de administración moderno y responsivo  
+✅ Reportes automáticos (PDF, Excel, etc.)  
+✅ Configuración general del sistema e idiomas  
+✅ Base de datos relacional en MySQL  
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+---
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## 🧱 Estructura del proyecto
+```bash
+sistema_gestion_escolar/
+├── app/
+│   ├── Http/
+│   ├── Models/
+│   └── Providers/
+├── bootstrap/
+├── config/
+├── database/
+│   ├── migrations/
+│   └── seeders/
+├── public/
+├── resources/
+│   ├── views/
+│   ├── js/
+│   └── css/
+├── routes/
+│   └── web.php
+├── tests/
+└── .env.example
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+⚙️ Instalación
+🔹 Requisitos previos
 
-## Laravel Sponsors
+PHP >= 8.1
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+Composer
 
-### Premium Partners
+MySQL
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+Node.js & npm
 
-## Contributing
+Extensiones habilitadas: pdo_mysql, openssl, mbstring, tokenizer, xml
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+🔹 Pasos de instalación
 
-## Code of Conduct
+Clona este repositorio:
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+git clone https://github.com/powerslave12334/sistema_gestion_escolar.git
+cd sistema_gestion_escolar
 
-## Security Vulnerabilities
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+Instala las dependencias:
 
-## License
+composer install
+npm install && npm run build
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+Configura el entorno:
+
+cp .env.example .env
+php artisan key:generate
+
+
+Edita .env con tus credenciales de base de datos MySQL:
+
+DB_DATABASE=sistema_gestion_escolar
+DB_USERNAME=root
+DB_PASSWORD=tu_contraseña
+
+
+Ejecuta las migraciones y los seeders:
+
+php artisan migrate --seed
+
+
+Inicia el servidor:
+
+php artisan serve
+
+
+Luego abre tu navegador en:
+👉 http://localhost:8000

@@ -7,23 +7,25 @@
 ![Status](https://img.shields.io/badge/Status-En%20Desarrollo-blue)
 
 Un sistema integral de gestión escolar desarrollado con **Laravel** y **MySQL**, diseñado para administrar todos los aspectos académicos, administrativos y comerciales de una institución educativa.  
-Incluye módulos de usuarios, alumnos, calificaciones, inventario, tienda en línea, reportes y más.  
+Incluye módulos de usuarios, alumnos, calificaciones, inventario, tienda en línea, reportes y más.
 
 ---
 
 ## 🧭 Tabla de contenidos
-- [🚀 Características principales](#-características-principales)
-- [🧱 Estructura del proyecto](#-estructura-del-proyecto)
-- [⚙️ Instalación](#️-instalación)
-- [🧩 Módulos disponibles](#-módulos-disponibles)
-- [💡 Uso](#-uso)
-- [🤝 Contribuciones](#-contribuciones)
-- [📄 Licencia](#-licencia)
-- [👤 Autor](#-autor)
+
+-   [🚀 Características principales](#-características-principales)
+-   [🧱 Estructura del proyecto](#-estructura-del-proyecto)
+-   [⚙️ Instalación](#️-instalación)
+-   [🧩 Módulos disponibles](#-módulos-disponibles)
+-   [💡 Uso](#-uso)
+-   [🤝 Contribuciones](#-contribuciones)
+-   [📄 Licencia](#-licencia)
+-   [👤 Autor](#-autor)
 
 ---
 
 ## 🚀 Características principales
+
 ✅ Autenticación y roles de usuario (administrador, profesor, alumno)  
 ✅ Gestión completa de alumnos y personal docente  
 ✅ Registro y control de calificaciones  
@@ -33,11 +35,12 @@ Incluye módulos de usuarios, alumnos, calificaciones, inventario, tienda en lí
 ✅ Panel de administración moderno y responsivo  
 ✅ Reportes automáticos (PDF, Excel, etc.)  
 ✅ Configuración general del sistema e idiomas  
-✅ Base de datos relacional en MySQL  
+✅ Base de datos relacional en MySQL
 
 ---
 
 ## 🧱 Estructura del proyecto
+
 ```bash
 sistema_gestion_escolar/
 ├── app/
@@ -59,7 +62,8 @@ sistema_gestion_escolar/
 ├── tests/
 └── .env.example
 
-⚙️ Instalación
+## ⚙️ Instalación
+
 🔹 Requisitos previos
 
 PHP >= 8.1
@@ -111,3 +115,4 @@ php artisan serve
 
 Luego abre tu navegador en:
 👉 http://localhost:8000
+```
